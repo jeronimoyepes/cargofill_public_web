@@ -54,6 +54,9 @@ section {
     width: 100%;
     overflow: scroll;
     position: relative;
+    img {
+        max-height: 700px;
+    }
 }
 
 
