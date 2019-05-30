@@ -11,8 +11,24 @@
 body {
 }
 
+h2 {
+    font-weight: 700;
+    font-size: 2.1em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
 section {
     padding: 40px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
 }
 
 .wrapper {
@@ -23,10 +39,6 @@ section {
 
 .what {
     background-image: url(../img/bg_home.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    color: #fff;
     .logo {
         display: block;
         width: 90%;
@@ -48,6 +60,31 @@ section {
 .how {
     color: $main-blue;
     background-color: $bg-gray;
+}
+
+.why {
+    background-image: url(../img/bg_op.jpg);
+    .item {
+        margin-bottom: 60px;
+        text-align: center;
+        img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        b {
+            font-weight: 600;
+            display: block;
+        }
+        p {
+            font-weight: 300;
+            font-size: 1.2em;
+            text-align: initial;
+        }
+    }
+}
+
+.dev {
+    background-image: url(../img/bg_pro.jpg);
 }
 
 .h-scroll {
@@ -81,6 +118,23 @@ section {
         img {
             width: 100%;
             height: auto;
+        }
+    }
+    
+    .why {
+        .item {
+            text-align: initial;
+            img {
+                vertical-align: middle;
+                margin-right: 20px;
+            }
+            .description {
+                display: inline-block;
+                width: 50%;
+                max-width: 550px;
+                vertical-align: middle;
+            }
+            
         }
     }
 }
