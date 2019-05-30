@@ -1,0 +1,17 @@
+// colores corporativos
+
+$main-blue: #004456;
+$second-blue: #00a098;
+$bg-gray: #f5f5f5;
+$bright-green: #afe100;
+
+@mixin gradient {
+    background: rgba(0,0,0,0);
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.27) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.27)));
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.27) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.27) 100%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.27) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.27) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 ); 
+}

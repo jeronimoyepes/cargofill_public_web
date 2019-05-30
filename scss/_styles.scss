@@ -7,3 +7,86 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+}
+
+section {
+    padding: 40px 0;
+}
+
+.wrapper {
+    padding: 0 5%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.what {
+    background-image: url(../img/bg_home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    .logo {
+        display: block;
+        width: 90%;
+        margin: 40px auto 60px auto;
+    }
+    h1 {
+        overflow-wrap: break-word;
+        font-weight: 300;
+        font-size: 2em;
+        max-width: 660px;
+        margin-bottom: 50px;
+        line-height: 1.2em;
+    }
+    .arrow {
+        display: none;
+    }
+}
+
+.how {
+    color: $main-blue;
+    background-color: $bg-gray;
+}
+
+.h-scroll {
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+}
+
+
+@media(min-width:800px) {
+    .what {
+        .logo {
+            max-width: 538px;
+            margin: initial;
+            margin: 150px 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 50px;
+        }
+        
+    }
+    .h-scroll {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        overflow: initial;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .arrow {
+        display: block;
+        margin: 0 auto;
+        width: 30px;
+        height: auto;
+    }
+}
