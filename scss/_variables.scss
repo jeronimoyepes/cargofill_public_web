@@ -15,3 +15,25 @@ $bright-green: #afe100;
     background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.27) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 ); 
 }
+
+@mixin rounded ($pixels) {
+    border-radius: $pixels;
+    -moz-border-radius: $pixels;
+    -webkit-border-radius: $pixels;
+}
+
+@mixin transform ($prop) {
+    -moz-transform:$prop;
+    -webkit-transform:$prop;
+    -o-transform:$prop;
+    -ms-transform:$prop;
+    transform:$prop;
+}
+
+@mixin transition ($time) {
+    -webkit-transition: all $time ease-in-out;
+    -moz-transition: all $time ease-in-out;
+    -ms-transition: all $time ease-in-out;
+    -o-transition: all $time ease-in-out;
+    transition: all $time ease-in-out;
+}

@@ -1,73 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+  <link rel="apple-touch-icon-precomposed" sizes="57x57"
+  href="/img/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+  href="/img/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"
+  href="/img/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+  href="/img/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120"
+  href="/img/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152"
+  href="/img/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="CargoFill" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png" />
+  <meta name="theme-color" content="#004456"> 
+  
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/fullpage.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CargoFill</title>
+</head>
+<body>
+  
+  <section class="what section"> <!-- la clase section es para el script fullpage scroll -->
+    <div class="wrapper">
+      <img class="logo" src="img/logo.svg" alt="CargoFill" />
+      <h1>
+        La web para conectar a los generadores de carga con transportadores y
+        almacenadores al mismo tiempo
+      </h1>
+      <img class="arrow" src="img/arrow.svg" alt="" >
+    </div>
+  </section>
+  
+  
+  <section class="how section">
+    <div class="wrapper">
+      
+      <h2>Cómo funciona</h2>
+      
+      <h3>En la aplicación existen tres tipos de usuarios</h3>
+      <img class="scroll" src="img/scroll.svg" alt="">
+    </div>
+    
+    <!-- contenedor para hacer scroll horizontal de una imagen -->
+    <div class="h-scroll">
+      <img src="img/working.svg" alt="">
+    </div>
+    
+  </section>
+  
+  
+  <section class="why section">
+    <div class="wrapper">
+      <h2>Oportunidades</h2>
+      <div class="carousel">
+        <div class="nav">
+          <ul>
+            <li id="genBtn" class="active">Generador</li>
+            <li id="transBtn">Transportador</li>
+            <li id="almaBtn">Almacenador</li>
+          </ul>
+        </div>
 
-<link rel="apple-touch-icon-precomposed" sizes="57x57"
-    href="/img/favicon/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114"
-    href="/img/favicon/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"
-    href="/img/favicon/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144"
-    href="/img/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120"
-    href="/img/favicon/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152"
-    href="/img/favicon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16" />
-    <meta name="application-name" content="CargoFill" />
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png" />
-    <meta name="theme-color" content="#004456"> 
-    
-    <link rel="stylesheet" href="css/main.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CargoFill</title>
-  </head>
-  <body>
-    
-    
-    <section class="what">
-      <div class="wrapper">
-        <img class="logo" src="img/logo.svg" alt="CargoFill" />
-        <h1>
-          La web para conectar a los generadores de carga con transportadores y
-          almacenadores al mismo tiempo
-        </h1>
-        <img class="arrow" src="img/arrow.svg" alt="" >
-      </div>
-    </section>
-    
-    
-    <section class="how">
-      <div class="wrapper">
-        
-        <h2>Cómo funciona</h2>
-        
-        <h3>En la aplicación existen tres tipos de usuarios</h3>
-        
-      </div>
-      <!-- contenedor para hacer scroll horizontal de una imagen -->
-      <div class="h-scroll">
-        <img src="img/working.svg" alt="">
-      </div>
-    </section>
-    
-    
-    <section class="why">
-      <div class="wrapper">
-        <h2>Oportunidades</h2>
-        <div class="carousel">
-          <div class="nav">
-            <ul>
-              <li>Generador</li>
-              <li>Transportador</li>
-              <li>Almacenador</li>
-            </ul>
-          </div>
+        <div class="content-container">
+          
           <div class="content">
             <!-- oportunidades de los generadores  -->
             <div class="gene"> 
@@ -168,51 +173,70 @@
           </div>
         </div>
       </div>
-    </section>
-    
-    
-    <section class="dev">
-      <div class="wrapper">
-        <h2>En desarrollo</h2>
-        <div class="steps">
-          <div class="step">
-            <img src="img/fase1.svg" alt="">
-            <p>Investigación y conceptualización</p>
-          </div>
-          <div class="step">
-            <img src="img/fase2.svg" alt="">
-            <p>Diseño</p>
-            <ul>
-              <li>Wireframe</li>
-              <li>MockUp</li>
-              <li>Prototipo</li>
-            </ul>
-          </div>
-          <div class="step alpha">
-            <img src="img/fase1.svg" alt="">
-            <p>Pruebas</p>
-          </div>
-          <div class="step alpha">
-            <img src="img/fase1.svg" alt="">
-            <p>Lanzamiento</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    <section class="more">
-      <div class="wrapper">
-        <p>¿Quieres saber más?</p>
-        <a class="contact_btn" href="#">Contáctanos</a>
-        <div class="social">
-          <a href=""><img src="img/youtube.svg" alt=""></a>
-          <a href=""><img src="img/twitter.svg" alt=""></a>
-          <a href=""><img src="img/facebook.svg" alt=""></a>
-        </div>
-      </div>
-    </section>
-  </body>
-  <script src="js/styling.js"></script>
-  </html>
+    </div>
+  </section>
   
+  
+  <section class="dev section">
+    <div class="wrapper">
+      
+      <h2>En desarrollo</h2>
+      <h3>Nos estamos preparando para que próximamente puedas contar con nuestros servicio</h3>
+      
+      <div class="steps">
+        <div class="step invest">
+          <img src="img/fase1.svg" alt="">
+          <p>Investigación y conceptualización</p>
+        </div>
+        
+        <img class="fase-line-vert" src="img/fase-line-vert.svg" alt=">">                
+        <img class="fase-line" src="img/fase-line.svg" alt=">">
+        
+        <div class="step design">
+          <img src="img/fase2.svg" alt="">
+          <p>Diseño - Fase actual</p>
+          <ul>
+            <li>Wireframe</li>
+            <li>MockUp</li>
+            <li>Prototipo</li>
+          </ul>
+        </div>
+        
+        <img class="fase-line-vert alpha50" src="img/fase-line-vert.svg" alt=">">                
+        <img class="fase-line alpha50" src="img/fase-line.svg" alt=">">
+        
+        <div class="step test alpha50">
+          <img src="img/fase3.svg" alt="">
+          <p>Pruebas</p>
+        </div>
+        
+        <img class="fase-line-vert alpha50" src="img/fase-line-vert.svg" alt=">">                                
+        <img class="fase-line alpha50" src="img/fase-line.svg" alt=">">
+        
+        <div class="step launch alpha50">
+          <img src="img/fase4.svg" alt="">
+          <p>Lanzamiento</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  
+  <section class="more section">
+    <div class="wrapper">
+      
+      <p>¿Quieres saber más?</p>
+      <a class="contact_btn" href="#">Contáctanos</a>
+      <div class="social">
+        <a href=""><img src="img/youtube.svg" alt=""></a>
+        <a href=""><img src="img/twitter.svg" alt=""></a>
+        <a href=""><img src="img/facebook.svg" alt=""></a>
+      </div>
+      
+    </div>
+  </section>
+  
+</body>
+<script src="js/styling.js"></script>
+</html>
