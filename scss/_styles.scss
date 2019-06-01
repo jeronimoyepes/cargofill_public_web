@@ -115,6 +115,7 @@ section {
         display: flex;
         width: 300%;
         margin-left: 0;
+        @include transition (500ms);
     }
     .content > div {
         display: inline-block;
@@ -164,6 +165,9 @@ section {
             }
         }
         .design {
+            p {
+                font-weight: 600;
+            }
             img {
                 height: 150px;
             }
@@ -190,6 +194,7 @@ section {
             font-size: 1.1em;
             margin-top: 20px;
             font-weight: 500;
+            letter-spacing: 0.7px;
         }
     } 
 }
@@ -197,7 +202,7 @@ section {
 
 .more {
     p {
-        margin-top: 300px;
+        margin-top: 100px;
         text-align: center;
         color: $main-blue;
         font-size: 1.4em;
@@ -219,7 +224,7 @@ section {
     }
     .social {
         text-align: center;
-        margin-bottom: 300px;
+        margin-bottom: 100px;
         a {
             margin-right: 50px;	
             display: inline-block;
@@ -334,5 +339,13 @@ section {
         .launch {
             margin-top: 50px;
         }
+    }
+    .more {
+        p {
+            margin-top: 300px;
+        }
+        .social {
+            margin-bottom: 300px;
+        }    
     }
 }

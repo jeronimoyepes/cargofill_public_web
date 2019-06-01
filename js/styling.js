@@ -33,20 +33,20 @@ function removeLiClass(params) {
 
 genBtn.onclick = function () {
     $(".content").style["margin-left"] = "0px";
-    this.className = "active";
     removeLiClass();
+    this.className = "active";
 }
 
 transBtn.onclick = function () {
     $(".content").style["margin-left"] = "-100%";
+    removeLiClass();
     this.className = "active";
-    removeLiClass();    
 }
 
 almaBtn.onclick = function () {
     $(".content").style["margin-left"] = "-200%";
-    this.className = "active";
-    removeLiClass();    
+    removeLiClass(); 
+    this.className = "active";  
 }
 
 
