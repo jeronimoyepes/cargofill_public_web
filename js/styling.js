@@ -8,8 +8,9 @@ function assingHeight (string) {
 
 var winWidht = window.innerWidth;
 
+assingHeight(".what");
+
 if (winWidht >= 1024) {
-    assingHeight(".what");
     assingHeight(".how");
     assingHeight(".why");
     assingHeight(".dev");    

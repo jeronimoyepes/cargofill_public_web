@@ -29,11 +29,16 @@ h3 {
 }
 
 section {
+    background-attachment: fixed;
     padding: 60px 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
     color: #fff;
+}
+
+.what {
+    padding: 1px;
 }
 
 .wrapper {
@@ -52,8 +57,33 @@ section {
     .logo {
         display: block;
         width: 90%;
-        margin: 40px auto 60px auto;
+        margin: 80px auto 100px auto;
     }
+    .logo {
+        -webkit-animation: logo 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: logo 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    @-webkit-keyframes logo {
+        0% {
+            -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+    @keyframes logo {
+        0% {
+            -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+    
     h1 {
         overflow-wrap: break-word;
         font-weight: 300;
@@ -100,6 +130,7 @@ section {
         text-align: center;
         padding: 10px;
         background-color: $main-blue;
+        margin-bottom: 4px;
     }
     li:first-child {
         @include rounded (10px 10px 0px 0px);
@@ -297,7 +328,6 @@ section {
             
         }
     }
-
     .more {
         .contact_btn {
             font-size: 1.7em;
@@ -307,6 +337,11 @@ section {
 }
 
 @media(min-width:1024px) {
+    .what {
+        .logo {
+            margin-top: 200px;
+        }
+    }
     .arrow {
         display: block;
         margin: 0 auto;
@@ -338,6 +373,13 @@ section {
         }
         .launch {
             margin-top: 50px;
+        }
+    }
+    .why {
+        .nav {
+            li {
+                margin-bottom: 0;
+            }
         }
     }
     .more {
