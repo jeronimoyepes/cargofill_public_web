@@ -251,7 +251,7 @@ section {
         font-weight: 800;
         letter-spacing: 0.01em;
         background-color: $bright-green;
-        @include rounded(100px)
+        @include rounded(100px);
     }
     .social {
         text-align: center;
@@ -271,9 +271,9 @@ section {
 @media(min-width:800px) {
     .what {
         .logo {
-            max-width: 538px;
+            max-width: 500px;
             margin: initial;
-            margin: 150px 0;
+            margin: 100px 0;
         }
         h1 {
             font-size: 3em;
@@ -339,7 +339,7 @@ section {
 @media(min-width:1024px) {
     .what {
         .logo {
-            margin-top: 200px;
+
         }
     }
     .arrow {
@@ -381,13 +381,18 @@ section {
                 margin-bottom: 0;
             }
         }
+        .item {
+            img {
+                margin-bottom: 0px;
+            }
+        }    
     }
     .more {
         p {
-            margin-top: 300px;
+            margin-top: 200px;
         }
         .social {
-            margin-bottom: 300px;
+            margin-bottom: 200px;
         }    
     }
 }
