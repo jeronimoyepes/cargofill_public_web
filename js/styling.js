@@ -10,7 +10,7 @@ var winWidht = window.innerWidth;
 
 assingHeight(".what");
 
-if (winWidht >= 1400) {
+if (winWidht >= 1900) {
     assingHeight(".how");
     assingHeight(".why");
     assingHeight(".dev");    
