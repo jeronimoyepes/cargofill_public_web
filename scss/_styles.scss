@@ -332,11 +332,6 @@ section {
 }
 
 @media(min-width:1024px) {
-    .what {
-        .logo {
-            
-        }
-    }
     .arrow {
         display: block;
         margin: 0 auto;
@@ -393,6 +388,9 @@ section {
 }
 
 @media(min-width:1200px) {
+}
+
+@media(min-width:1500px) {
     .what {
         .logo {
             margin-top: 200px;
