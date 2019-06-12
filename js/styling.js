@@ -22,7 +22,6 @@ var transBtn = $("#transBtn");
 var almaBtn = $("#almaBtn");
 var carouselContent = $(".carousel .content");
 var contentMaxHeight = $(".carousel .gene").clientHeight + "px";
-carouselContent.style.height = contentMaxHeight;
 
 function removeLiClass(params) {
     var li = document.querySelectorAll(".carousel .nav li");

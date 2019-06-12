@@ -55,8 +55,6 @@ section {
         display: block;
         width: 90%;
         margin: 80px auto 100px auto;
-    }
-    .logo {
         -webkit-animation: logo 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: logo 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
@@ -336,7 +334,7 @@ section {
 @media(min-width:1024px) {
     .what {
         .logo {
-
+            
         }
     }
     .arrow {
@@ -391,5 +389,13 @@ section {
         .social {
             margin-bottom: 200px;
         }    
+    }
+}
+
+@media(min-width:1200px) {
+    .what {
+        .logo {
+            margin-top: 200px;
+        }
     }
 }
